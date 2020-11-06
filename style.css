@@ -1,0 +1,163 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.dribbble.com/users/44324/screenshots/14437955/media/29266c7c67da0474bdb4ebe9ce68603a.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* @media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+} */
+
+#title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#description {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 10px;
+    letter-spacing: 0.8px;
+}
+
+.small-text {
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.header__title {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.form__box {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: rgba(41, 40, 70, 0.8);
+    border-radius: 5px;
+}
+
+#survey-form {
+    padding: 50px 45px 70px;
+}
+
+.input__form {
+    padding-bottom: 30px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+input,
+select,
+button,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    resize: vertical;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #495057;
+    color: #495057;
+    font-size: 18px;
+}
+
+.form__control:focus {
+    border: 1px solid lightseagreen;
+    outline: none;
+}
+
+.input__form p,
+.input__form label {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.input__radio,
+.input__checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+.input-file {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #37af65;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #45a049;
+}
